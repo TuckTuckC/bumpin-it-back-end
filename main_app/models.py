@@ -12,7 +12,7 @@ class User(models.Model):
 
 
 class Product(models.Model):
-    name = models.CharField('Name', maxLength=240)
+    name = models.CharField('Name', max_length=240)
     brand = models.CharField('Brand', max_length=240)
     #FOR WHEN WE HAVE IMAGE UPLOADS>> picture = models.ImageField(upload_to=None, height_field=None, width_field=None, max_length=100)
     price = models.CharField('Price', max_length=240)
